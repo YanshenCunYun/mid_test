@@ -304,13 +304,13 @@ switch (x){
         mText.setBackgroundColor(Color.rgb(255, 255, 255));
         break;
     case NotePad.Notes.YELLOW_COLOR:
-        mText.setBackgroundColor(Color.rgb(247, 216, 133));
+        mText.setBackgroundColor(Color.rgb(213, 246, 9));
         break;
     case NotePad.Notes.BLUE_COLOR:
-        mText.setBackgroundColor(Color.rgb(165, 202, 237));
+        mText.setBackgroundColor(Color.rgb(62, 192, 241));
         break;
     case NotePad.Notes.GREEN_COLOR:
-        mText.setBackgroundColor(Color.rgb(161, 214, 174));
+        mText.setBackgroundColor(Color.rgb(3, 241, 62));
         break;
     case NotePad.Notes.RED_COLOR:
         mText.setBackgroundColor(Color.rgb(244, 149, 133));
