@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Nov 20 00:34:16 CST 2022
+0.base=E\:\\edge_download\\NotePad-master (2)\\NotePad-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX
