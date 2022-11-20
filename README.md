@@ -14,11 +14,11 @@ Date date = new Date(now);
 SimpleDateFormat format = new SimpleDateFormat("yy.MM.dd HH:mm:ss");
 String dateTime = format.format(date);
 
-  ```
+```
   
   
  显示时间戳
-   ```
+ ```
    <TextView
         android:id="@+id/text2"
         android:layout_width="match_parent"
@@ -28,17 +28,21 @@ String dateTime = format.format(date);
         android:textSize="20sp"
         />
         
-         ```
+```
   
- NodeList修改部分
-   ```
+ NodeList修改部分：
+ 
+ 
+```
    private static final String TAG = "NotesList";
 private static final String[] PROJECTION = new String[] {
         NotePad.Notes._ID, // 0
         NotePad.Notes.COLUMN_NAME_TITLE, // 1
         NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE,//时间戳
 };
-  ```
+```
+
+
   
   
   截图
@@ -52,7 +56,7 @@ private static final String[] PROJECTION = new String[] {
   
 **基本功能二：搜索**
 
- ```
+```
  <!--菜单中增加一个搜索项-->
     <item
         android:id="@+id/menu_search"
@@ -60,18 +64,18 @@ private static final String[] PROJECTION = new String[] {
         android:icon="@android:drawable/ic_search_category_default"
         android:showAsAction="always">
     </item>
-  ```
+```
   
   添加搜索
   
   
-  ```
+```
               case R.id.menu_search:
                 Intent intent = new Intent();
                 intent.setClass(NotesList.this,NoteSearch.class);
                 NotesList.this.startActivity(intent);
                 return true;
-  ```
+```
          public class NoteSearch extends ListActivity  implements SearchView.OnQueryTextListener {
 
     @Override
@@ -142,12 +146,8 @@ private static final String[] PROJECTION = new String[] {
             startActivity(new Intent(Intent.ACTION_EDIT, uri));
         }
     }
-
-
-
 }
-      
-  ```   
+
 
   ![image](https://user-images.githubusercontent.com/77438764/202895130-86975b5d-35ad-44bb-90be-0c3b93c68601.png)
   
